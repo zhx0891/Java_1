@@ -1,4 +1,4 @@
-package HWork;
+package HWork.Java_1.git;
 
 import java.util.Arrays;
 
@@ -82,18 +82,24 @@ public class HomeWork2 {
             System.out.println();
         }
     }
-    public static void fifth(){
-        int indBN =0;
-        int biggestNum = 0;
-        int intArr [] = randIntArr();
-            printArr(intArr);
-        for (int i = 0; i <intArr.length ; i++) {
-          if (intArr[i]>=biggestNum) {
-              biggestNum=intArr[i];
-              indBN=i;
-          }
+    public static void fifth() {
+
+        int maxNum = 0;
+        int intArr[] = randIntArr();
+        int minNum =2147483647;
+        for (int i: intArr) {
+            if (i >= maxNum) {
+                maxNum=i;
+            }
+            if (i <= minNum) {
+                minNum=i;
+            }
         }
-        System.out.println("Наибольшее число в массиве = " +biggestNum+", его индекс (от нулевого) "+indBN);
+
+            printArr(intArr);
+            System.out.println("Наибольшее число в массиве = " + maxNum );
+            System.out.println("Наименьшее  число в массиве = " + minNum);
+
     }
     public static boolean sixth(int arr[]){
 
