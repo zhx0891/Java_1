@@ -7,20 +7,20 @@ public class Employee {
     int salary;
     int age;
 
-    public Employee(String fio, String mail, String number, int cash, int years) {
-        name=fio;
-        email=mail;
-        phone=number;
-        salary=cash;
-        age=years;
+    public Employee(String name, String email, String phone, int salary, int age) {
+        this.name=name;
+        this.email=email;
+        this.phone=phone;
+        this.salary=salary;
+        this.age=age;
     }
 
     public void showInfo(){
-        System.out.println("Сотрудник "+this.name);
-        System.out.println("Телефон "+this.phone);
-        System.out.println("Электронный адрес "+this.email);
-        System.out.println("Зарплатушка "+this.salary);
-        System.out.println("Возраст "+this.age);
+        System.out.println("Сотрудник "+name);
+        System.out.println("Телефон "+phone);
+        System.out.println("Электронный адрес "+email);
+        System.out.println("Зарплатушка "+salary);
+        System.out.println("Возраст "+age);
         System.out.println();
     }
 }
