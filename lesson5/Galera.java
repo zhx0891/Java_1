@@ -1,6 +1,6 @@
 package lesson5;
 
-public class Galera {
+class Galera {
 
 
     public static void main(String[] args) {
