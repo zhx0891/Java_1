@@ -12,6 +12,7 @@ public class Kitchen {
     public static void main(String[] args) {
 
         Plate pl1 = new Plate();
+        CatToilet toil1 = new CatToilet();
         Cat[] catsArr = new Cat[5];
 
         catsArr[0] = new Cat("Муся");
@@ -38,8 +39,13 @@ public class Kitchen {
             if (ans.equals("да")) ques = false;
 
         }
-            while (ques);
+        while (ques);
 
+        for (int i = 0; i < catsArr.length; i++) {
+            catsArr[i].makePile(toil1);
+            toil1.info();
+
+        }
 
         }
 
